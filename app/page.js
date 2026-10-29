@@ -11,6 +11,11 @@ import Testimonials from "@/components/sections/Testimonials";
 import NowAndLanguages from "@/components/sections/NowAndLanguages";
 import ExperiencePreview from "@/components/sections/ExperiencePreview";
 import Faq from "@/components/sections/Faq";
+import Principles from "@/components/sections/Principles";
+import AiWork from "@/components/sections/AiWork";
+import Toolbox from "@/components/sections/Toolbox";
+import ResumeSnapshot from "@/components/sections/ResumeSnapshot";
+import CtaBanner from "@/components/sections/CtaBanner";
 import { profile, about, skills, projects } from "@/lib/data";
 
 export default function Home() {
@@ -115,12 +120,36 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Principles */}
+      <section className="section">
+        <div className="container">
+          <SectionHead eyebrow="Principles" title={<>Principles I <span className="grad-text">build by</span></>} sub="The rules I follow on every project, big or small." />
+          <Principles />
+        </div>
+      </section>
+
       {/* Experience */}
       <section className="section">
         <div className="container">
           <SectionHead eyebrow="Experience" title={<>Where I've <span className="grad-text">worked</span></>} />
           <ExperiencePreview />
           <div className="center reveal"><Link href="/education" className="btn btn-ghost">Education & full experience <FiArrowRight /></Link></div>
+        </div>
+      </section>
+
+      {/* AI */}
+      <section className="section">
+        <div className="container">
+          <SectionHead eyebrow="AI in my workflow" title={<>Building with AI as a <span className="grad-text">collaborator</span></>} sub="AI helps me move faster. I stay responsible for quality." />
+          <AiWork />
+        </div>
+      </section>
+
+      {/* Toolbox */}
+      <section className="section">
+        <div className="container">
+          <SectionHead eyebrow="Toolbox" title={<>The tools behind <span className="grad-text">the work</span></>} sub="What I open every day to design, build and ship." />
+          <Toolbox />
         </div>
       </section>
 
@@ -145,6 +174,21 @@ export default function Home() {
         <div className="container narrow">
           <SectionHead eyebrow="FAQ" title={<>Common <span className="grad-text">questions</span></>} />
           <Faq />
+        </div>
+      </section>
+
+      {/* Resume */}
+      <section className="section">
+        <div className="container">
+          <SectionHead eyebrow="Resume" title={<>The short version, <span className="grad-text">at a glance</span></>} sub="My experience and education in one place." />
+          <ResumeSnapshot />
+        </div>
+      </section>
+
+      {/* Call to action */}
+      <section className="section">
+        <div className="container">
+          <CtaBanner />
         </div>
       </section>
     </main>

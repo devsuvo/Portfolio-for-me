@@ -655,3 +655,48 @@ h1 .grad-text, h2 .grad-text {
 .card::before, .tilt::before { display: none !important; }
 .reveal { transition-duration: .4s !important; }
 @media (max-width: 900px) { .nav-links { background: #07110d !important; } }
+
+/* New sections: principles, AI, toolbox, resume snapshot, CTA */
+.principles { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+.principle { padding: 22px; }
+.principle-num { font-size: .8rem; color: var(--accent-2); font-weight: 600; letter-spacing: 1px; }
+.principle h3 { font-size: 1.05rem; margin: 8px 0 6px; }
+.principle p { color: var(--muted); font-size: .92rem; }
+.ai-box { padding: 32px; }
+.ai-intro { font-size: 1.08rem; max-width: 720px; margin-bottom: 26px; }
+.ai-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 22px 32px; margin-bottom: 26px; }
+.ai-item h3 { font-size: 1rem; margin-bottom: 4px; color: var(--accent-2); }
+.ai-item p { color: var(--muted); font-size: .93rem; }
+.ai-tools { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; color: var(--muted); font-size: .9rem; }
+.toolbox { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0 24px; border-top: 1px solid var(--border); }
+.tool-col { padding: 22px 0 6px; }
+.tool-col h3 { font-size: .8rem; letter-spacing: 1.5px; text-transform: uppercase; color: var(--accent-2); margin-bottom: 12px; }
+.tool-col ul { padding: 0; }
+.tool-col li { list-style: none; padding: 8px 0; border-bottom: 1px solid var(--border); font-size: .95rem; }
+.snapshot { padding: 30px; }
+.snapshot-top { display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; padding-bottom: 20px; border-bottom: 1px solid var(--border); margin-bottom: 20px; }
+.snapshot-top h3 { font-size: 1.4rem; }
+.snapshot-top p { color: var(--muted); }
+.snapshot-grid { display: grid; grid-template-columns: 1.3fr 1fr; gap: 32px; }
+.snapshot h4 { font-size: .8rem; letter-spacing: 1.5px; text-transform: uppercase; color: var(--accent-2); margin: 0 0 10px; }
+.snapshot h4:not(:first-child) { margin-top: 20px; }
+.snap-row { display: flex; justify-content: space-between; gap: 12px; padding: 8px 0; border-bottom: 1px solid var(--border); font-size: .93rem; }
+.snap-row span { color: var(--muted); text-align: right; }
+.snap-cert { color: var(--muted); font-size: .93rem; }
+.cta { display: grid; grid-template-columns: 1.4fr 1fr; gap: 30px; align-items: end; padding: 48px; border-radius: 28px; background: linear-gradient(135deg, #10b981, #047857 60%, #064e3b); }
+.cta h2 { font-size: clamp(2rem, 4vw, 3rem); line-height: 1.1; color: #fff; }
+.cta p { color: #d1fae5; margin: 14px 0 22px; max-width: 460px; }
+.btn-dark { background: #04140d; color: #fff; }
+.cta-links { display: flex; flex-direction: column; gap: 10px; }
+.cta-links a { display: flex; align-items: center; gap: 10px; padding: 14px 18px; border-radius: 14px; background: rgba(4, 20, 13, .35); color: #fff; font-weight: 500; word-break: break-all; }
+@media (max-width: 900px) {
+  .principles, .toolbox { grid-template-columns: repeat(2, 1fr); }
+  .cta { grid-template-columns: 1fr; padding: 32px 24px; }
+  .snapshot-grid { grid-template-columns: 1fr; gap: 10px; }
+}
+@media (max-width: 560px) {
+  .principles, .ai-grid { grid-template-columns: 1fr; }
+  .ai-box, .snapshot { padding: 22px; }
+  .snap-row { flex-direction: column; gap: 2px; }
+  .snap-row span { text-align: left; }
+}
