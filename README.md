@@ -12,7 +12,7 @@ Personal portfolio of **Suvo Dev**, a Full Stack Web Developer (WordPress, Shopi
 - **About Me**: programming journey, the work I enjoy, hobbies and interests
 - **Skills** shown with progress bars and ring charts, grouped into Frontend, Backend, CMS & Platforms, and Design & Tools
 - **Education** and certifications
-- **Experience**: Hexa's Zindabazar, Fiverr, GreatestDeals LLC, MetaTechDesk
+- **Experience**: Hexa's Zindabazar, Fiverr, GreatestDeals LLC, Home Furnishings Depot
 - **Projects**: 7 project cards with image, name and a **View Details** button. Each details page shows:
   - Main technology stack
   - Description

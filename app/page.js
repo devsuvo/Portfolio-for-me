@@ -56,7 +56,7 @@ export default function Home() {
       <div className="container trusted reveal">
         <span>Trusted by teams & clients at</span>
         <div className="trusted-logos">
-          {["Hexa's Zindabazar", "GreatestDeals LLC", "MetaTechDesk", "Fiverr Pro Clients", "codersd.com"].map((n) => <b key={n}>{n}</b>)}
+          {["Hexa's Zindabazar", "GreatestDeals LLC", "Home Furnishings Depot", "Fiverr Pro Clients", "codersd.com"].map((n) => <b key={n}>{n}</b>)}
         </div>
       </div>
 
