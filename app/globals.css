@@ -654,3 +654,4 @@ h1 .grad-text, h2 .grad-text {
 .hero::before { animation: none !important; filter: none !important; background: radial-gradient(circle, rgba(16,185,129,.18), transparent 65%) !important; }
 .card::before, .tilt::before { display: none !important; }
 .reveal { transition-duration: .4s !important; }
+@media (max-width: 900px) { .nav-links { background: #07110d !important; } }
