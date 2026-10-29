@@ -1,9 +1,9 @@
-import { FaGithub, FaLinkedinIn } from "react-icons/fa6";
+import { FaGithub, FaLinkedinIn, FaWhatsapp } from "react-icons/fa6";
 import { SiFiverr } from "react-icons/si";
 import { FiGlobe } from "react-icons/fi";
 import { profile } from "@/lib/data";
 
-const icons = { github: FaGithub, linkedin: FaLinkedinIn, fiverr: SiFiverr, website: FiGlobe };
+const icons = { github: FaGithub, linkedin: FaLinkedinIn, fiverr: SiFiverr, website: FiGlobe, whatsapp: FaWhatsapp };
 
 export default function Socials() {
   return (
