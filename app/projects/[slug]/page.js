@@ -26,7 +26,7 @@ export default async function ProjectPage({ params }) {
           <p className="detail-lead reveal" style={{ "--d": "120ms" }}>{p.short}</p>
           <div className="detail-actions reveal" style={{ "--d": "180ms" }}>
             <a href={p.live} target="_blank" rel="noopener noreferrer" className="btn btn-primary"><FiExternalLink /> Live Site</a>
-            <a href={p.github} target="_blank" rel="noopener noreferrer" className="btn btn-ghost"><FiGithub /> GitHub (Client)</a>
+            {p.github && <a href={p.github} target="_blank" rel="noopener noreferrer" className="btn btn-ghost"><FiGithub /> GitHub (Client)</a>}
           </div>
           <div className="detail-img card reveal zoom-in"><img src={p.image} alt={p.name} /></div>
           <div className="detail-grid">

@@ -638,3 +638,19 @@ h1 .grad-text, h2 .grad-text {
 /* Footer CTA headline */
 .footer-cta h2 { font-weight: 600; }
 .footer-cta h2 .grad-text { font-family: var(--font-serif-stack); font-style: italic; font-weight: 400; }
+
+/* Calmer motion: stop constant looping decorations */
+.blob, .shine, .photo-wrap, .photo-ring, .orbit, .float-chip, .card::before,
+.bar-fill::after, .scroll-hint span, .tilt::before { animation: none !important; }
+.photo-ring { background: linear-gradient(135deg, #10b981, #134e4a); }
+.page-enter { animation: pageIn .4s ease both; }
+@keyframes pageIn { from { opacity: 0; } to { opacity: 1; } }
+.tilt, .tilt:hover { transform: none !important; }
+
+/* Performance: drop expensive blur/filters that slow scrolling */
+.card, .float-chip, .btn-ghost { backdrop-filter: none !important; -webkit-backdrop-filter: none !important; }
+.card { background: #0b1712; }
+.blob, .cursor-glow { display: none !important; }
+.hero::before { animation: none !important; filter: none !important; background: radial-gradient(circle, rgba(16,185,129,.18), transparent 65%) !important; }
+.card::before, .tilt::before { display: none !important; }
+.reveal { transition-duration: .4s !important; }

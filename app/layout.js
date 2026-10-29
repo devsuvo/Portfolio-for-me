@@ -4,7 +4,6 @@ import { profile } from "@/lib/data";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Reveal from "@/components/Reveal";
-import CursorGlow from "@/components/CursorGlow";
 
 const sans = Inter({ subsets: ["latin"], variable: "--font-sans" });
 const display = Sora({ subsets: ["latin"], variable: "--font-display", weight: ["500", "600", "700"] });
@@ -21,7 +20,6 @@ export default function RootLayout({ children }) {
       <body>
         <div className="bg-grid" aria-hidden />
         <div className="blob b1" aria-hidden /><div className="blob b2" aria-hidden /><div className="blob b3" aria-hidden />
-        <CursorGlow />
         <Navbar />
         <Reveal />
         {children}
