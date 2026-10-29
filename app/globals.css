@@ -700,3 +700,8 @@ h1 .grad-text, h2 .grad-text {
   .snap-row { flex-direction: column; gap: 2px; }
   .snap-row span { text-align: left; }
 }
+
+/* Fix light edge on primary buttons */
+.btn-primary { border: 0; background-origin: border-box; background-clip: border-box; box-shadow: 0 12px 32px -10px rgba(16,185,129,.7); }
+.btn::after { opacity: 0; }
+.btn:hover::after { opacity: 1; }
